@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sadiq&Co</title>
+  <meta name="description" content="Find the best products and deals with our comprehensive reviews and buying guides.">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <h1>Sadiq&Co</h1>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#reviews" class="nav-link">Reviews</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Welcome to Sadiq&Co</h1>
+      <p class="hero-subtitle">Your trusted source for product reviews, buying guides, and the best deals online</p>
+      <a href="#reviews" class="cta-button">Explore Reviews</a>
+    </div>
+  </section>
+
+  <!-- Affiliate Disclosure -->
+  <section class="disclosure">
+    <div class="container">
+      <div class="disclosure-content">
+        <i class="fas fa-info-circle"></i>
+        <p><strong>Disclosure:</strong> Some of the links on this page are affiliate links. If you click a link and make
+          a purchase, Sadiq&Co may earn a commission at no extra cost to you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Reviews -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <h2 class="section-title">Featured Reviews</h2>
+      <div class="reviews-grid">
+
+        <!-- Coffee Grinders Review -->
+        <article class="review-card">
+          <div class="review-image">
+            <i class="fas fa-coffee"></i>
+          </div>
+          <div class="review-content">
+            <h3>Best Coffee Grinders for Home Brewing</h3>
+            <p>Discover the top coffee grinders that will transform your morning brew. We've tested 15+ models to find
+              the perfect balance of grind consistency and value.</p>
+            <div class="review-meta">
+              <span class="date">December 20, 2023</span>
+              <span class="category">Kitchen</span>
+            </div>
+            <div class="review-actions">
+              <button class="read-more-btn" onclick="showReview('coffee')">Read Review</button>
+              <a href="https://www.amazon.com/dp/B000T9SCZ2?tag=dealora-20" target="_blank"
+                rel="sponsored noopener noreferrer" class="buy-button">
+                <i class="fab fa-amazon"></i> View on Amazon
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Camping Stoves Review -->
+        <article class="review-card">
+          <div class="review-image">
+            <i class="fas fa-fire"></i>
+          </div>
+          <div class="review-content">
+            <h3>Top 7 Camping Stoves Under $100</h3>
+            <p>Planning your next outdoor adventure? We've tested the most reliable and portable camping stoves that
+              won't break the bank.</p>
+            <div class="review-meta">
+              <span class="date">December 18, 2023</span>
+              <span class="category">Outdoor</span>
+            </div>
+            <div class="review-actions">
+              <button class="read-more-btn" onclick="showReview('camping')">Read Review</button>
+              <a href="https://www.amazon.com/dp/B00ENDRORM?tag=dealora-20" target="_blank"
+                rel="sponsored noopener noreferrer" class="buy-button">
+                <i class="fab fa-amazon"></i> View on Amazon
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blender Review -->
+        <article class="review-card">
+          <div class="review-image">
+            <i class="fas fa-blender"></i>
+          </div>
+          <div class="review-content">
+            <h3>How to Choose a Blender for Smoothies</h3>
+            <p>Not all blenders are created equal. Learn what features matter most for perfect smoothies and which
+              models deliver the best results.</p>
+            <div class="review-meta">
+              <span class="date">December 15, 2023</span>
+              <span class="category">Kitchen</span>
+            </div>
+            <div class="review-actions">
+              <button class="read-more-btn" onclick="showReview('blender')">Read Review</button>
+              <a href="https://www.amazon.com/dp/B00LBQMMHW?tag=dealora-20" target="_blank"
+                rel="sponsored noopener noreferrer" class="buy-button">
+                <i class="fab fa-amazon"></i> View on Amazon
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <h2>About Sadiq&Co</h2>
+        <p>At DealOra, we're passionate about helping you make informed purchasing decisions.</p>
+        <div class="about-features">
+          <div class="feature">
+            <i class="fas fa-search"></i>
+            <h3>Searches</h3>
+            <p>These products are the best of our searches.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-heart"></i>
+            <h3>Honest Reviews</h3>
+            <p>Unbiased opinions based on actual product performance</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-dollar-sign"></i>
+            <h3>Best Value</h3>
+            <p>We help you find the perfect balance of quality and price</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>contact@dealora.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h3>Response Time</h3>
+              <p>We typically respond within 24 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>DealOra</h3>
+          <p>Your trusted source for product reviews and deals.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <a href="#" onclick="showPolicy('affiliate')">Affiliate Disclosure</a>
+          <a href="#" onclick="showPolicy('privacy')">Privacy Policy</a>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Sadiq&Co. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Reviews -->
+  <div id="review-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
